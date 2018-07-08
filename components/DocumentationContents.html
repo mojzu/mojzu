@@ -1,12 +1,22 @@
-<!-- TODO(H): Documentation contents component. -->
-<nav>
-  <ul>
+<!-- TODO(L): Documentation contents style. -->
+<div class="pa2">
+  <nav class="documentation-contents ba bl-0 bt-0 bb-0 b--dotted b--near-black pr2">
+    <div class="f6 fw6 pa2 ttu tracked">
+      Contents
+    </div>
     {#each pages as page, i}
-    <li>
-      <a href={page.href}>{i + 1}. {page.metadata.title}</a>
-    </li>
+    <a href={page.href} class="link purple hover-light-purple">
+      <div class="f4 pa2 bg-animate hover-bg-light-gray br1">
+        {page.metadata.title}
+      </div>
+    </a>
     {/each}
-  </ul>
-</nav>
+  </nav>
+</div>
 
-<style></style>
+<style>
+  .documentation-contents {
+    min-width: 220px;
+    max-width: 220px;
+  }
+</style>

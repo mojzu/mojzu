@@ -5,18 +5,17 @@
 
 <!-- TODO(H): Documentation page. -->
 <header class="w-100 bg-purple pa3">
-  <h1 class="f3 fw6 ma0">
-    <a class="link white hover-yellow" href={page.href}>{page.metadata.title}</a>
-  </h1>
+  <div class="f4 fw6 white">Documentation / {content}</div>
 </header>
 
-<DocumentationContents pages={pages}></DocumentationContents>
+<div class="w-100 flex">
+  <DocumentationContents pages={pages}></DocumentationContents>
 
-<div class='content'>
-  {@html page.html}
+  <div class="pa2">
+    <h1 class="mv2 f2 fw6">{page.metadata.title}</h1>
+    {@html page.html}
+  </div>
 </div>
-
-<style></style>
 
 <script>
   import DocumentationContents from "../../../components/DocumentationContents.html";
@@ -30,7 +29,7 @@
       const json = await response.json();
 
       if (response.status === 200) {
-        return { page: json.page, pages: json.pages };
+        return { content: params.content, page: json.page, pages: json.pages };
       } else {
         this.error(response.status, json.message);
       }
