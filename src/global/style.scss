@@ -1,0 +1,6 @@
+/* Tailwind CSS. */
+/* <https://tailwindcss.com/docs/configuration> */
+@tailwind preflight;
+@tailwind components;
+@import "components";
+@tailwind utilities;

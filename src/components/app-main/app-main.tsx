@@ -1,8 +1,7 @@
 import { Component } from "@stencil/core";
 
 @Component({
-    tag: "app-main",
-    shadow: true
+    tag: "app-main"
 })
 export class AppMain {
     public render() {

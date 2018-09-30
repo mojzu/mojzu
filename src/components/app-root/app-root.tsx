@@ -2,13 +2,12 @@ import { Component } from "@stencil/core";
 import "@stencil/router";
 
 @Component({
-    tag: "app-root",
-    shadow: true
+    tag: "app-root"
 })
 export class AppRoot {
     public render() {
         return (
-            <div>
+            <div class="bg-green">
                 <header>Hello, world!</header>
 
                 <main>

@@ -7,6 +7,10 @@
   "homepage": "https://mojzu.net/",
   "license": "Unlicense",
   "private": true,
+  "collection": "dist/collection/collection-manifest.json",
+  "types": "dist/types/components.d.ts",
+  "module": "dist/esm/es5/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "stencil build --prerender",
     "start": "stencil build --dev --watch --serve",
@@ -17,6 +21,9 @@
     "@stencil/core": "^0.13.2",
     "@stencil/postcss": "^0.1.0",
     "@stencil/router": "^0.3.0",
-    "marked": "^0.4.0"
+    "@stencil/sass": "^0.1.1",
+    "autoprefixer": "^9.1.5",
+    "marked": "^0.4.0",
+    "tailwindcss": "^0.6.6"
   }
 }
