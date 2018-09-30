@@ -1,9 +1,10 @@
 # Git ignored files.
 # <https://git-scm.com/docs/gitignore>
-/.deprecated
-/.sapper
-/app/manifest
-/build
-/node_modules
+/.deprecated/
+/.stencil/
+/dist/
+/node_modules/
+/src/components.d.ts
+/www/
 /*.log
 /*.tgz
