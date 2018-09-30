@@ -1,0 +1,15 @@
+.breadcrumbs {
+    @apply list-reset inline-flex pr-2 text-grey-darkest;
+
+    .breadcrumbs-item {
+        @apply py-2 pl-2;
+
+        &::after {
+            @apply pl-2;
+            content: "/";
+        }
+        &:last-child::after {
+            display: none;
+        }
+    }
+}

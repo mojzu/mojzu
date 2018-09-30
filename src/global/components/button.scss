@@ -1,0 +1,10 @@
+.button {
+    @apply py-2 px-4 border shadow text-grey-darkest;
+
+    &:active:enabled {
+        @apply shadow-inner;
+    }
+    &:disabled {
+        @apply opacity-50 cursor-not-allowed;
+    }
+}

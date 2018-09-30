@@ -2,5 +2,6 @@
 /* <https://tailwindcss.com/docs/configuration> */
 @tailwind preflight;
 @tailwind components;
-@import "components";
+@import "components/breadcrumbs";
+@import "components/button";
 @tailwind utilities;
